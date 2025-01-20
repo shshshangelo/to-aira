@@ -200,10 +200,28 @@
     <p>Made with ❤️ by Michael Angelo E. Entera imong gwapo nga uyab :p</p>
   </footer>
 
-  <audio id="audioPlayer" autoplay>
-    <source src="assets/audio/palagi.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-  </audio>
+<audio id="audioPlayer" autoplay>
+  <source src="assets/audio/palagi.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<button id="playButton">Play</button>
+
+<script>
+  const audioPlayer = document.getElementById('audioPlayer');
+  const playButton = document.getElementById('playButton');
+
+  playButton.addEventListener('click', function() {
+    if (audioPlayer.paused) {
+      audioPlayer.play();
+      playButton.textContent = 'Pause';
+    } else {
+      audioPlayer.pause();
+      playButton.textContent = 'Play';
+    }
+  });
+</script>
+
 
   
   <script src="js/script.js"></script>
