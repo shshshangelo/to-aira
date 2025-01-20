@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4e1d2;  /* Soft peach */
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #ff6b81;  /* Warm pink */
+    color: white;
+    padding: 60px 0;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  .cta-btn {
+    background-color: #ff5c8d; /* Darker pink */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-btn:hover {
+    background-color: #ff3c68;
+  }
+  
+  /* Gallery Section */
+  .gallery {
+    background-color: #ffffff; /* White background for gallery for better image visibility */
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff6b81;  /* Warm pink */
+  }
+  
+  /* Carousel Styles */
+  .carousel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fce0e0;  /* Light peach/pink background */
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    max-width: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Carousel Navigation Buttons */
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Message Section */
+  .messages {
+    background-color: #ffedeb;  /* Soft pink background */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  .messages h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ff6b81;  /* Warm pink */
+  }
+  
+  .messages p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    color: #555;
+    text-align: justify;
+  }
+  
+  .messages p:last-child {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    font-style: italic;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #ff6b81;  /* Warm pink */
+    color: white;
+    padding: 20px 0;
+    font-size: 1rem;
+  }
+  
+  /* Smooth Scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  audio {
+  display: none; /* Hide the audio controls if you want */
+}
