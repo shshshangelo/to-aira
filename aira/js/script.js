@@ -1,37 +1,5 @@
 let slideIndex = 0;
 
-// Function to play the audio automatically
-function playMusic() {
-  const audio = document.getElementById('audioPlayer');
-  if (audio) {
-    audio.play().catch((error) => {
-      console.error('Error playing audio:', error); // Log any errors
-    });
-  }
-}
-
-// Event listener for user interaction (click or scroll) to unmute and play audio
-document.addEventListener('DOMContentLoaded', function () {
-  const audio = document.getElementById('audioPlayer');
-  
-  // Event listener for the first click or scroll
-  const playAudioOnInteraction = function() {
-    // Unmute and play audio once user interacts
-    audio.muted = false;
-    audio.play().catch((error) => {
-      console.error('Error playing audio:', error);
-    });
-
-    // Remove the event listener after the first interaction
-    document.removeEventListener('click', playAudioOnInteraction);
-    document.removeEventListener('scroll', playAudioOnInteraction);
-  };
-
-  // Listen for first click or scroll
-  document.addEventListener('click', playAudioOnInteraction, { once: true });
-  document.addEventListener('scroll', playAudioOnInteraction, { once: true });
-});
-
 // Carousel functions
 function showSlides() {
   const slides = document.getElementsByClassName("carousel-slide");
